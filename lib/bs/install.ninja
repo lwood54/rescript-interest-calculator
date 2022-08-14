@@ -1,0 +1,26 @@
+rescript = 1
+rule cp
+  command = cp $i $out
+rule touch
+ command = touch $out
+o App.cmi : cp ../bs/src/App.cmi
+o App.cmj : cp ../bs/src/App.cmj
+o App.cmt : cp ../bs/src/App.cmt
+o App.res : cp ../../src/App.res
+o CarLoanCalculator.cmi : cp ../bs/src/helpers/calculators/CarLoanCalculator.cmi
+o CarLoanCalculator.cmj : cp ../bs/src/helpers/calculators/CarLoanCalculator.cmj
+o CarLoanCalculator.cmt : cp ../bs/src/helpers/calculators/CarLoanCalculator.cmt
+o CarLoanCalculator.res : cp ../../src/helpers/calculators/CarLoanCalculator.res
+o Conversions.cmi : cp ../bs/src/helpers/conversions/Conversions.cmi
+o Conversions.cmj : cp ../bs/src/helpers/conversions/Conversions.cmj
+o Conversions.cmt : cp ../bs/src/helpers/conversions/Conversions.cmt
+o Conversions.res : cp ../../src/helpers/conversions/Conversions.res
+o FirstRescript.cmi : cp ../bs/src/components/FirstRescript.cmi
+o FirstRescript.cmj : cp ../bs/src/components/FirstRescript.cmj
+o FirstRescript.cmt : cp ../bs/src/components/FirstRescript.cmt
+o FirstRescript.res : cp ../../src/components/FirstRescript.res
+o CarLoan.cmi : cp ../bs/src/components/loans/CarLoan/CarLoan.cmi
+o CarLoan.cmj : cp ../bs/src/components/loans/CarLoan/CarLoan.cmj
+o CarLoan.cmt : cp ../bs/src/components/loans/CarLoan/CarLoan.cmt
+o CarLoan.res : cp ../../src/components/loans/CarLoan/CarLoan.res
+build install.stamp : touch App.cmi App.cmj CarLoanCalculator.cmi CarLoanCalculator.cmj Conversions.cmi Conversions.cmj FirstRescript.cmi FirstRescript.cmj CarLoan.cmi CarLoan.cmj 

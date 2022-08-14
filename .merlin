@@ -1,0 +1,18 @@
+####{BSB GENERATED: NO EDIT
+FLG -ppx '/Users/ljw/Desktop/Programming/Personal/ReScript/explore/interest-calculator/node_modules/.pnpm/rescript@9.1.4/node_modules/rescript/darwin/bsc.exe -as-ppx -bs-jsx 3'
+S /Users/ljw/Desktop/Programming/Personal/ReScript/explore/interest-calculator/node_modules/.pnpm/rescript@9.1.4/node_modules/rescript/lib/ocaml
+B /Users/ljw/Desktop/Programming/Personal/ReScript/explore/interest-calculator/node_modules/.pnpm/rescript@9.1.4/node_modules/rescript/lib/ocaml
+FLG -w +a-4-9-20-40-41-42-50-61-102
+S /Users/ljw/Desktop/Programming/Personal/ReScript/explore/interest-calculator/node_modules/@rescript/react/lib/ocaml
+B /Users/ljw/Desktop/Programming/Personal/ReScript/explore/interest-calculator/node_modules/@rescript/react/lib/ocaml
+S src
+B lib/bs/src
+S src/helpers/calculators
+B lib/bs/src/helpers/calculators
+S src/helpers/conversions
+B lib/bs/src/helpers/conversions
+S src/components
+B lib/bs/src/components
+S src/components/loans/CarLoan
+B lib/bs/src/components/loans/CarLoan
+####BSB GENERATED: NO EDIT}

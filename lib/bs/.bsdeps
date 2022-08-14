@@ -1,0 +1,15 @@
+9.1.4
+/Users/ljw/Desktop/Programming/Personal/ReScript/explore/interest-calculator
+0
+bsconfig.json	0x1.8be462e28bf92p+30
+src	0x1.8be4637c434bep+30
+src/helpers	0x1.8be4ed8cc46bdp+30
+src/helpers/calculators	0x1.8be4616e34219p+30
+src/helpers/conversions	0x1.8be4edc2550dfp+30
+src/assets	0x1.8bdf49bb9620ap+30
+src/components	0x1.8bdf550e74855p+30
+src/components/loans	0x1.8be06320526bfp+30
+src/components/loans/CarLoan	0x1.8be063438840dp+30
+src/components/loans/CreditCard	0x1.8bdf5490d458ap+30
+===
+/Users/ljw/Desktop/Programming/Personal/ReScript/explore/interest-calculator/node_modules/.pnpm/rescript@9.1.4/node_modules/rescript/darwin/rescript.exe	0x1.8bdf4bf47ff3ep+30

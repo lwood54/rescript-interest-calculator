@@ -1,0 +1,27 @@
+rescript = 1
+g_finger := /Users/ljw/Desktop/Programming/Personal/ReScript/explore/interest-calculator/node_modules/@rescript/react/lib/ocaml/install.stamp
+cleaner = /Users/ljw/Desktop/Programming/Personal/ReScript/explore/interest-calculator/node_modules/gentype/gentype.exe
+rule astj
+  command = /Users/ljw/Desktop/Programming/Personal/ReScript/explore/interest-calculator/node_modules/.pnpm/rescript@9.1.4/node_modules/rescript/darwin/bsc.exe  -bs-v 9.1.4 -bs-jsx 3  -absname -bs-ast -o $out $i
+o src/App.ast : astj ../../src/App.res
+rule deps
+  command = /Users/ljw/Desktop/Programming/Personal/ReScript/explore/interest-calculator/node_modules/.pnpm/rescript@9.1.4/node_modules/rescript/darwin/bsb_helper.exe -hash 405785f8d9dc66c7ee0ec8e17fbe356a $in
+  restat = 1
+o src/App.d : deps src/App.ast
+rule mij
+  command = /Users/ljw/Desktop/Programming/Personal/ReScript/explore/interest-calculator/node_modules/.pnpm/rescript@9.1.4/node_modules/rescript/darwin/bsc.exe -I src/components/loans/CreditCard -I src/components/loans/CarLoan -I src/components/loans -I src/components -I src/assets -I src/helpers/conversions -I src/helpers/calculators -I src/helpers -I src -I /Users/ljw/Desktop/Programming/Personal/ReScript/explore/interest-calculator/node_modules/@rescript/react/lib/ocaml   -bs-gentype /Users/ljw/Desktop/Programming/Personal/ReScript/explore/interest-calculator/node_modules/gentype/gentype.exe -bs-package-name first-rescript -bs-package-output es6:$in_d:.bs.js -bs-v $g_finger $i
+  dyndep = 1
+  restat = 1
+o src/App.cmj src/App.cmi ../../src/App.bs.js : mij src/App.ast
+o src/helpers/calculators/CarLoanCalculator.ast : astj ../../src/helpers/calculators/CarLoanCalculator.res
+o src/helpers/calculators/CarLoanCalculator.d : deps src/helpers/calculators/CarLoanCalculator.ast
+o src/helpers/calculators/CarLoanCalculator.cmj src/helpers/calculators/CarLoanCalculator.cmi ../../src/helpers/calculators/CarLoanCalculator.bs.js : mij src/helpers/calculators/CarLoanCalculator.ast
+o src/helpers/conversions/Conversions.ast : astj ../../src/helpers/conversions/Conversions.res
+o src/helpers/conversions/Conversions.d : deps src/helpers/conversions/Conversions.ast
+o src/helpers/conversions/Conversions.cmj src/helpers/conversions/Conversions.cmi ../../src/helpers/conversions/Conversions.bs.js : mij src/helpers/conversions/Conversions.ast
+o src/components/FirstRescript.ast : astj ../../src/components/FirstRescript.res
+o src/components/FirstRescript.d : deps src/components/FirstRescript.ast
+o src/components/FirstRescript.cmj src/components/FirstRescript.cmi ../../src/components/FirstRescript.bs.js : mij src/components/FirstRescript.ast
+o src/components/loans/CarLoan/CarLoan.ast : astj ../../src/components/loans/CarLoan/CarLoan.res
+o src/components/loans/CarLoan/CarLoan.d : deps src/components/loans/CarLoan/CarLoan.ast
+o src/components/loans/CarLoan/CarLoan.cmj src/components/loans/CarLoan/CarLoan.cmi ../../src/components/loans/CarLoan/CarLoan.bs.js : mij src/components/loans/CarLoan/CarLoan.ast
