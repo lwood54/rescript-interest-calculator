@@ -1,5 +1,3 @@
-let now = Js.Date.make()
-Js.log2(React.string("DATE ---> "), now)
 // QUESTION: why does placing this outside of react component work, but breaks when inside
 // with error "The value makeProps can't be found in CarLoan"
 type loan = Principal | Interest | Months
